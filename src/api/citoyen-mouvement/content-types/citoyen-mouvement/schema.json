@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citoyen_mouvements",
+  "info": {
+    "singularName": "citoyen-mouvement",
+    "pluralName": "citoyen-mouvements",
+    "displayName": "citoyen mouvement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "founding_date": {
+      "type": "date"
+    },
+    "region": {
+      "type": "string"
+    },
+    "municipality": {
+      "type": "string"
+    },
+    "intervention_domain": {
+      "type": "string"
+    },
+    "president": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::staff-person.staff-person"
+    },
+    "representative": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::staff-person.staff-person"
+    }
+  }
+}

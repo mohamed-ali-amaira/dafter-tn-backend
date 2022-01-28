@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "syndicats",
+  "info": {
+    "singularName": "syndicat",
+    "pluralName": "syndicats",
+    "displayName": "Syndicat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "name_ar": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "assembly_meeting_date": {
+      "type": "date"
+    },
+    "other_date": {
+      "type": "date"
+    },
+    "region": {
+      "type": "string"
+    },
+    "municipality": {
+      "type": "string"
+    },
+    "intervention_domain": {
+      "type": "string"
+    },
+    "copie_darret_pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "text_annonce_de_creation": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "president": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::staff-person.staff-person"
+    },
+    "member": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::staff-person.staff-person"
+    }
+  }
+}

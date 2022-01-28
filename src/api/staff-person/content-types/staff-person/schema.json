@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_people",
+  "info": {
+    "singularName": "staff-person",
+    "pluralName": "staff-people",
+    "displayName": "Staff Person",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "activity": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "president",
+        "member"
+      ]
+    },
+    "cin": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

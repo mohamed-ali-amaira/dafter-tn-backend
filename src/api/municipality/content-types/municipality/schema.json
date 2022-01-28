@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "municipalities",
+  "info": {
+    "singularName": "municipality",
+    "pluralName": "municipalities",
+    "displayName": "Municipality"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "Ariana",
+        "Beja",
+        "Ben_Arous",
+        "Bizerte",
+        "Gabes",
+        "Gafsa",
+        "Jendouba",
+        "Kairouan",
+        "Kasserine",
+        "Kebili",
+        "Kef",
+        "Mahdia",
+        "Manouba",
+        "Medenine",
+        "Monastir",
+        "Nabeul",
+        "Sfax",
+        "Sidi_Bouzid",
+        "Siliana",
+        "Sousse",
+        "Tataouine",
+        "Tozeur",
+        "Tunis",
+        "Zaghouan"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "associations",
+  "info": {
+    "singularName": "association",
+    "pluralName": "associations",
+    "displayName": "Association",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "matricule_fiscale": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "name_ar": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "adress_ar": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "patente": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "JORT": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "RNE": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "intervention_domain": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "municipality": {
+      "type": "string"
+    },
+    "president": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::staff-person.staff-person"
+    },
+    "staff_person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::staff-person.staff-person"
+    }
+  }
+}
